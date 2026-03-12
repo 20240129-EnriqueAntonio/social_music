@@ -1,0 +1,36 @@
+.bandas-section {
+  display: flex;
+  justify-content: space-between; /* título a la izquierda, botón a la derecha */
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bandas-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.crear-banda-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* espacio entre ícono y texto */
+  background-color: #007bff; /* azul */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.crear-banda-btn:hover {
+  background-color: #0056b3; /* azul más oscuro al pasar el mouse */
+}
+
+.Sidebar,
+.Header
+.Perfil,
+.Cardprincipal:not(:last-child) {
+  margin-bottom: 20px;
+}

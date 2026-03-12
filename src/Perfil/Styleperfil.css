@@ -1,0 +1,49 @@
+.profile {
+  display: flex;
+  flex-direction:column;
+      
+  background: #fff;          /* fondo blanco tipo tarjeta */
+  border-radius: 10px;       /* bordes redondeados */
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
+  width: 75%;
+  height: 25%   
+
+ ;
+ height: 25%;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;        /* hace la imagen circular */
+  object-fit: cover;         /* recorta bien la foto */
+  margin-bottom: 1rem;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-role {
+  margin: 0.25rem 0 1rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.profile-btn {
+  background-color: #1976d2; /* azul estilo Material */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.profile-btn:hover {
+  background-color: #1565c0; /* azul más oscuro al pasar el mouse */
+}

@@ -4,13 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Login from './Login'
 import Registro from './registro'
+import  Inicio  from './Inicio/inicio'
+import Banda from './Bandas/Crearbanda'
+
+
 
 
 function App() {
   return (
     <div className="App">
-      {/*<Login />*/}
-      <Registro />
+<Banda/>
+      
+     
       
     </div>
   )

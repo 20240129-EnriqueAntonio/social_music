@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: space-between; /* separa izquierda y derecha */
+  align-items: center;            /* centra verticalmente */
+  background: linear-gradient(90deg, #1565c0, #1976d2); /* degradado azul */
+  padding: 0.75rem 1.5rem;        /* aire arriba/abajo y a los lados */
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1; /* evita desalineación con el ícono */
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* espacio entre ícono y texto */
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* espacio más amplio entre íconos */
+}
+
+header svg {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+header svg:hover {
+  transform: scale(1.1); /* efecto al pasar el mouse */
+}

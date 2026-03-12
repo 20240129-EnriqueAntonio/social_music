@@ -1,0 +1,28 @@
+
+.Sidebar {
+  display: flex;
+  flex-direction: column; /* apila los div en columna */
+  gap: 20px;  
+}
+
+.Perfil{
+  display: flex;
+  flex-direction: column; /* apila los div en columna */
+  gap: 80px;              /* separación uniforme */
+}
+.Compartir{
+  display: flex;
+  flex-direction: column; /* apila los div en columna */
+  gap: 20px;              /* separación uniforme */
+}
+.Cardprincipal{
+  display: flex;
+  flex-direction: column; /* apila los div en columna */
+  gap: 20px;              /* separación uniforme */
+}
+.Sidebar,
+.Perfil,
+.Compartir,
+.Cardprincipal:not(:last-child) {
+  margin-bottom: 20px;
+}

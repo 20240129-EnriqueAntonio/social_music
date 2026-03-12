@@ -1,0 +1,51 @@
+.sidebar {
+  width: 75%;
+  background-color: #f8f9fa; /* gris claro */
+  height: 25%;
+  padding: 1rem 0;
+  border-color: black;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;          /* espacio entre ícono y texto */
+  padding: 0.75rem 1rem;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #7c8891; /* azul claro al pasar */
+  color: #1976d2;
+}
+
+.sidebar nav ul li.active {
+  background-color: #1976d2; /* azul activo */
+  color: white;
+  border-radius: 4px;
+}
+
+/* Íconos dentro del li */
+.sidebar nav ul li svg {
+  flex-shrink: 0;
+}
+
+/* Badge de notificaciones */
+.notification-badge {
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-left: auto; /* empuja el badge a la derecha */
+}
