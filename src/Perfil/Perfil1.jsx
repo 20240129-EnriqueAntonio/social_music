@@ -2,6 +2,9 @@ import React from "react";
 import './Styleperfil.css'
 
 function Perfil() {
+
+  const usuario = JSON.parse(localStorage.getItem("usuario"));
+
   return (
     <div className="profile">
       <img 
@@ -9,8 +12,10 @@ function Perfil() {
         alt="Oso" 
         className="profile-img"
       />
-      <h4 className="profile-name">Carlos Mendez</h4>
+      <h4 className="profile-name">{usuario?.name}</h4>
+
       <p className="profile-role">Guitarra</p>
+
       <button className="profile-btn">Ver Perfil</button>
     </div>
   );
