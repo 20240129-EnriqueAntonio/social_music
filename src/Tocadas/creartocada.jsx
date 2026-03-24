@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import { useBandas } from '../context/BandContext';
-import './Cardcrearagrupacio.css'
+import { useTocadas } from '../context/TocadaContext';
 
-
-function Crearagrupacion({ onClose }) {
-  const { agregarBanda } = useBandas();
+function Creartocada({ onClose }){
+  const { agregarTocada } = useTocadas();
   const [formData, setFormData] = useState({
     nombre: "",
-    genero: "",
     ubicacion: "",
+    fecha: "",
     descripcion: ""
   });
 
@@ -22,13 +20,13 @@ function Crearagrupacion({ onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Banda creada:", formData);
-    agregarBanda(formData);
-    alert("¡Banda creada exitosamente!");
+    console.log("Tocada creada:", formData);
+    agregarTocada(formData);
+    alert("¡Tocada creada exitosamente!");
     setFormData({
       nombre: "",
-      genero: "",
       ubicacion: "",
+      fecha: "",
       descripcion: ""
     });
     if (onClose) {
@@ -39,8 +37,8 @@ function Crearagrupacion({ onClose }) {
   const handleCancel = () => {
     setFormData({
       nombre: "",
-      genero: "",
       ubicacion: "",
+      fecha: "",
       descripcion: ""
     });
     if (onClose) {
@@ -48,31 +46,21 @@ function Crearagrupacion({ onClose }) {
     }
   };
 
-  return (
+  return(
     <div>
-      <h2>Crear Banda / Grupo</h2>
-      <p>Crear tu banda y comienza a invitar músicos</p>
+        <div>
+      <h2>Crear Tocada / Evento</h2>
+      <p>Organiza un evento y publica </p>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="nombre">Nombre de la Banda</label>
+        <label htmlFor="nombre">Nombre del evento</label>
         <input
           type="text"
           id="nombre"
-          placeholder="El nombre de tu banda"
+          placeholder="El nombre del evento "
           value={formData.nombre}
           onChange={handleChange}
           required
         />
-
-        <label htmlFor="genero">Género Musical</label>
-        <select id="genero" value={formData.genero} onChange={handleChange} required>
-          <option value="">Selecciona un género</option>
-          <option value="rock">Rock</option>
-          <option value="pop">Pop</option>
-          <option value="jazz">Jazz</option>
-          <option value="metal">Metal</option>
-          <option value="reggae">Reggae</option>
-          <option value="clasico">Clásico</option>
-        </select>
 
         <label htmlFor="ubicacion">Ubicación</label>
         <input
@@ -83,7 +71,17 @@ function Crearagrupacion({ onClose }) {
           onChange={handleChange}
           required
         />
-
+        <section>
+                <label htmlFor="fecha">Fecha y Hora</label>
+        <input
+          type="datetime-local"
+          id="fecha"
+          placeholder="Fecha"
+          value={formData.fecha}
+          onChange={handleChange}
+          required
+        />
+        </section>
         <label htmlFor="descripcion">Descripción</label>
         <textarea
           id="descripcion"
@@ -93,14 +91,13 @@ function Crearagrupacion({ onClose }) {
           onChange={handleChange}
           required
         />
-
         <div>
           <button type="button" onClick={handleCancel}>Cancelar</button>
-          <button type="submit">Crear Banda</button>
+          <button type="submit">Crear Evento</button>
         </div>
       </form>
     </div>
-  );
+    </div>
+)
 }
-
-export default Crearagrupacion;
+export default Creartocada;

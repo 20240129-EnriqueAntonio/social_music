@@ -28,6 +28,11 @@
   background-color: #0056b3; /* azul más oscuro al pasar el mouse */
 }
 
+.bandas-content {
+  margin-top: 2rem;
+  width: 100%;
+}
+
 .Sidebar,
 .Header
 .Perfil,

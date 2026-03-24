@@ -1,7 +1,10 @@
 import React from "react";
 import './Styleperfil.css'
+import { useNavigate } from "react-router-dom";
 
 function Perfil() {
+  const navigate = useNavigate();
+  
   return (
     <div className="profile">
       <img 
@@ -11,7 +14,7 @@ function Perfil() {
       />
       <h4 className="profile-name">Carlos Mendez</h4>
       <p className="profile-role">Guitarra</p>
-      <button className="profile-btn">Ver Perfil</button>
+      <button className="profile-btn" onClick={() => navigate("/infoperfil")}>Ver Perfil</button>
     </div>
   );
 }

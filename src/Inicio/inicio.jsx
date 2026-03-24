@@ -28,8 +28,7 @@ function Inicio() {
       <CompatiendoHOY />
       </section>
       <section className="Cardprincipal">
-
-      <CardCambiante/>
+        <CardCambiante />
       </section>
     </div>
   );

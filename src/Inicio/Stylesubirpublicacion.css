@@ -37,6 +37,8 @@
   border-radius: 8px;
   padding: 20px;
   width: 800px;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
 }
 
 .modal-input {
@@ -47,6 +49,16 @@
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+
+.preview-media {
+  width: 100%;
+  max-height: 400px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 0.8rem;
+}
+
 
 .modal-actions {
   display: flex;
