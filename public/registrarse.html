@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Social Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="curved-shape"></div>
+
+        <div class="form-box Login">
+            <h2>Crear cuenta</h2>
+
+            <!-- Inicio de Form -->
+            <form action="#" id="formRegistro">
+                
+                <div class="input-box">
+                    <input type="text" id="nombre" required>
+                    <label for="nombre">Nombre</label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" id="correo" required>
+                    <label for="correo">Correo</label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+                </div>
+
+                <div class="input-group-row">
+                    
+                    <div class="input-box split">
+                        <select id="instrumento" required name="instrumento">
+                            <option value="" disabled selected hidden></option>
+                            <option value="guitarra">Guitarra</option>
+                            <option value="bajo">Bajo</option>
+                            <option value="bateria">Batería</option>
+                            <option value="teclado">Teclado</option>
+                            <option value="voz">Voz</option>
+                            <option value="otros">Varios / Otros</option>
+                        </select>
+                        <label for="instrumento">Instrumento</label>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+
+                    <div class="input-box split">
+                        <select id="genero" required name="genero">
+                            <option value="" disabled selected hidden></option>
+                            <option value="rock">Rock</option>
+                            <option value="pop">Pop</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="metal">Metal</option>
+                            <option value="urbano">Urbano</option>
+                            <option value="varios">Varios</option>
+                        </select>
+                        <label for="genero">Género</label>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+
+                </div> <div class="input-box">
+                    <input type="password" id="pass" required>
+                    <label for="pass">Contraseña</label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4m0 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+                    </svg>
+                </div>
+
+                <button class="btn" type="submit">Registrarse</button>
+
+                <div class="regi-link">
+                    <p><a href="login.html">Iniciar sesión</a></p>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="info-content Login">
+            <h2 style="text-align: center;">¡SOCIAL MUSIC!</h2>
+            <p>Crea tu cuenta para continuar y conocer otros músicos.</p>
+            
+
+            <div class="logo-guitarra">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+            <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.895 2.5 2m9-2c0 1.105-1.12 2-2.5 2S10 12.105 10 11s1.12-2 2.5-2 2.5.895 2.5 2"/>
+            <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
+            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
+        </svg>
+    </div>
+    </div>
+
+        
+    </div>
+    
+            
+
+
+<script src="Registro.js"></script>
+</body>
+</html>
